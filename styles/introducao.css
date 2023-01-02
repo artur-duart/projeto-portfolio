@@ -3,13 +3,13 @@
   Neste caso, está sendo configurado o tamanho máximo do elemento, o espaçamento interno e externo do elemento, o alinhamento do elemento como centro e o layout do elemento como grade. A grade é dividida em duas colunas, sendo que a primeira tem 1 parte e a segunda tem 2 partes. O espaçamento entre as colunas também é configurado.
 */
 .introducao {
-    max-width: 75rem;
-    padding: 2.5rem 1.25rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 6.25rem;
-    align-items: center;
+  max-width: 75rem;
+  padding: 2.5rem 1.25rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6.25rem;
+  align-items: center;
 }
 
 /* 
@@ -17,10 +17,10 @@
   Neste caso, está sendo configurado o tamanho e a altura da fonte, o espaçamento abaixo do elemento e a posição do elemento.
 */
 .introducao h1 {
-    font-size: 4.5rem;
-    line-height: 1.125;
-    margin-bottom: 1.875rem;
-    position: relative;
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 1.875rem;
+  position: relative;
 }
 
 /* 
@@ -28,15 +28,15 @@
   Neste caso, está sendo configurado o conteúdo, o display, o tamanho, a cor de fundo, a posição e a ordem de camadas do pseudo-elemento.
 */
 .introducao h1::before {
-    content: "";
-    display: block;
-    width: 8.125rem;
-    height: 6.25rem;
-    background: url("../img/detalhe.svg") no-repeat center;
-    position: absolute;
-    top: -0.9375rem;
-    left: -2.5rem;
-    z-index: -1;
+  content: "";
+  display: block;
+  width: 8.125rem;
+  height: 6.25rem;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  top: -0.9375rem;
+  left: -2.5rem;
+  z-index: -1;
 }
 
 /* 
@@ -44,8 +44,8 @@
   Neste caso, está sendo configurado o tamanho da fonte e a cor do texto.
 */
 .introducao p {
-    font-size: 1.5rem;
-    color: #adadad;
+  font-size: 1.5rem;
+  color: #adadad;
 }
 
 /* 
@@ -53,9 +53,9 @@
   Neste caso, está sendo configurado o tamanho da fonte.
 */
 @media (max-width: 64rem) {
-    .introducao h1 {
-        font-size: 3rem;
-    }
+  .introducao h1 {
+    font-size: 3rem;
+  }
 }
 
 /* 
@@ -63,20 +63,20 @@
   Neste caso, está sendo configurado o layout da grade (dividida em duas colunas), o espaçamento entre as colunas e o tamanho da fonte. Além disso, está sendo configurado o tamanho e a posição do pseudo-elemento "before" de elementos h1.
 */
 @media (max-width: 48rem) {
-    .introducao {
-        grid-template-columns: 1fr 1fr;
-        gap: 2.5rem;
-    }
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
 
-    .introducao h1 {
-        font-size: 2rem;
-    }
+  .introducao h1 {
+    font-size: 2rem;
+  }
 
-    .introducao h1::before {
-        width: 1.875rem;
-        height: 0.625rem;
-        left: 0rem;
-    }
+  .introducao h1::before {
+    width: 1.875rem;
+    height: 0.625rem;
+    left: 0rem;
+  }
 }
 
 /* 
@@ -84,11 +84,11 @@
   Neste caso, está sendo configurado o layout da grade (dividida em uma coluna única) e ocultando os elementos img.
 */
 @media (max-width: 30rem) {
-    .introducao {
-        grid-template-columns: 1fr;
-    }
+  .introducao {
+    grid-template-columns: 1fr;
+  }
 
-    .introducao img {
-        display: none;
-    }
+  .introducao img {
+    display: none;
+  }
 }

@@ -79,14 +79,10 @@
     padding: 0.3125rem 0.625rem;
 }
 
-/* 
-  A regra @media (max-width: 48rem) seleciona todos os elementos com a classe "introducao" quando o tamanho da tela for menor ou igual a 48 rem. 
-  Neste caso, está sendo configurado o layout da grade (dividida em duas colunas), o espaçamento entre as colunas e o tamanho da fonte. Além disso, está sendo configurado o tamanho e a posição do pseudo-elemento "before" de elementos h1.
-*/
 @media (max-width: 48rem) {
     .experiencias {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 2.5rem;
     }
 
     .experiencias .subtitulo {

@@ -3,12 +3,12 @@
   Neste caso, está sendo configurado o tamanho máximo do elemento, o display como flex, o alinhamento dos itens como espaço entre eles e o centro, o espaçamento interno e externo dos elementos e o alinhamento dos itens como centro.
 */
 .header {
-    max-width: 75rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2.5rem 1.25rem;
-    margin: 0 auto;
+  max-width: 75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1.25rem;
+  margin: 0 auto;
 }
 
 /* 
@@ -16,10 +16,10 @@
   Neste caso, está sendo configurado o display como flex, o espaçamento entre os elementos da lista, a forma como os elementos da lista são exibidos em telas menores e o alinhamento dos elementos da lista como centro.
 */
 .header__menu {
-    display: flex;
-    gap: 0.625rem;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* 
@@ -27,12 +27,12 @@
   Neste caso, está sendo configurado o tamanho e a altura da fonte, o espaçamento interno e externo dos elementos, a forma como os links são exibidos e a cor do texto.
 */
 .header__menu a {
-    font-size: 1.125rem;
-    line-height: 1.3;
-    padding: 0.625rem 1.25rem;
-    text-decoration: none;
-    color: #ffff;
-    display: block;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  padding: 0.625rem 1.25rem;
+  text-decoration: none;
+  color: #ffff;
+  display: block;
 }
 
 /* 
@@ -41,22 +41,22 @@
 */
 @media (max-width: 48rem) {
 
-    /* 
+  /* 
       A regra .header seleciona todos os elementos com a classe "header". 
       Neste caso, está sendo configurada a direção dos elementos filhos como coluna, o espaçamento entre os elementos filhos e o espaçamento interno do elemento.
     */
-    .header {
-        flex-direction: column;
-        gap: 2.5rem;
-        padding: 1.25rem;
-    }
+  .header {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1.25rem;
+  }
 
-    /* 
+  /* 
       A regra .header a seleciona todos os elementos a dentro de elementos com a classe "header". 
       Neste caso, está sendo configurada a cor de fundo e o arredondamento dos cantos dos elementos.
     */
-    .header a {
-        background: #0a0a0a;
-        border-radius: 0.25rem;
-    }
+  .header a {
+    background: #0a0a0a;
+    border-radius: 0.25rem;
+  }
 }
