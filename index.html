@@ -1,62 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <!-- O elemento head contém informações sobre o documento, como o título e links para arquivos de estilo e fontes de texto -->
-    <head>
-        <!-- A tag meta com o atributo charset define o conjunto de caracteres utilizado no documento -->
-        <meta charset="UTF-8" />
-        <!-- A tag meta com o atributo http-equiv e o valor "X-UA-Compatible" indica ao navegador qual é a versão do HTML ou do CSS que deve ser utilizada -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- A tag meta com o atributo name e o valor "viewport" indica ao navegador como deve ajustar o tamanho da página em diferentes dispositivos -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- O título da página, exibido na guia do navegador -->
-        <title>Artur Duarte - Desenvolvedor Full Stack</title>
+<!-- O elemento head contém informações sobre o documento, como o título e links para arquivos de estilo e fontes de texto -->
 
-        <!-- O link para o arquivo de estilo principal da página -->
-        <link rel="stylesheet" href="./styles/style.css" />
+<head>
+    <!-- A tag meta com o atributo charset define o conjunto de caracteres utilizado no documento -->
+    <meta charset="UTF-8" />
+    <!-- A tag meta com o atributo http-equiv e o valor "X-UA-Compatible" indica ao navegador qual é a versão do HTML ou do CSS que deve ser utilizada -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- A tag meta com o atributo name e o valor "viewport" indica ao navegador como deve ajustar o tamanho da página em diferentes dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- O título da página, exibido na guia do navegador -->
+    <title>Artur Duarte - Desenvolvedor Full Stack</title>
 
-        <!-- Os links rel="preconnect" permitem que o navegador faça uma conexão com os servidores dos arquivos de fontes antes de carregar o conteúdo da página -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <!-- O link para o arquivo de fonte da página, obtido do Google Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet" />
-    </head>
+    <!-- O link para o arquivo de estilo principal da página -->
+    <link rel="stylesheet" href="./styles/style.css" />
 
-    <!-- O elemento body contém o conteúdo visível da página -->
+    <!-- Os links rel="preconnect" permitem que o navegador faça uma conexão com os servidores dos arquivos de fontes antes de carregar o conteúdo da página -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- O link para o arquivo de fonte da página, obtido do Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+</head>
 
-    <body>
-        <!-- O elemento header contém a área de cabeçalho da página -->
-        <header class="header">
-            <!-- A tag img exibe uma imagem na página -->
-            <img src="./img/marca.svg" alt="&lt;dev.duarte/&gt;" />
+<!-- O elemento body contém o conteúdo visível da página -->
 
-            <!-- O elemento nav contém um menu de navegação -->
-            <nav>
-                <!-- O elemento ul contém uma lista não ordenada de itens -->
-                <ul class="header__menu">
-                    <!-- O elemento li representa um item da lista -->
-                    <li>
-                        <!-- A tag a cria um link para outra página ou para uma âncora em uma página -->
-                        <a href="#experiencia">Experiência</a>
-                    </li>
-                    <li>
-                        <a href="#formacao">Formação</a>
-                    </li>
-                    <li>
-                        <a href="#contato">Contato</a>
-                    </li>
+<body>
+    <!-- O elemento header contém a área de cabeçalho da página -->
+    <header class="header">
+        <!-- A tag img exibe uma imagem na página -->
+        <img src="./img/marca.svg" alt="&lt;dev.duarte/&gt;" />
+
+        <!-- O elemento nav contém um menu de navegação -->
+        <nav>
+            <!-- O elemento ul contém uma lista não ordenada de itens -->
+            <ul class="header__menu">
+                <!-- O elemento li representa um item da lista -->
+                <li>
+                    <!-- A tag a cria um link para outra página ou para uma âncora em uma página -->
+                    <a href="#experiencias">Experiências</a>
+                </li>
+                <li>
+                    <a href="#formacao">Formação</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 
+  A tag main representa o conteúdo principal do documento. 
+  A classe "introducao" é usada para aplicar estilos CSS específicos a este elemento. 
+-->
+    <main class="introducao">
+        <!-- 
+      A tag img é usada para exibir uma imagem. 
+      O atributo src especifica o endereço da imagem e o atributo alt fornece uma descrição alternativa da imagem. 
+    -->
+        <img src="img/perfil.png" alt="Foto de Artur Duarte" />
+        <!-- 
+      A tag div é usada para agrupar outros elementos HTML e aplicar estilos a eles. 
+      Neste caso, contém um elemento h1 e um elemento p. 
+    -->
+        <div>
+            <!-- 
+        A tag h1 é usada para exibir um título principal. 
+        O elemento br é usado para adicionar uma quebra de linha. 
+      -->
+            <h1>Desenvolvedor<br />Full Stack</h1>
+            <!-- 
+        A tag p é usada para exibir um parágrafo. 
+        O caractere &#128205; representa um emoji (neste caso, a localização de um mapa). 
+      -->
+            <p>Localizado em Osasco &#128205;</p>
+        </div>
+    </main>
+
+    <!-- 
+  A tag section é usada para agrupar conteúdo relacionado em um documento HTML. 
+  A classe "experiencia" é usada para aplicar estilos CSS específicos a este elemento. 
+  O atributo id é usado para identificar de forma única um elemento na página. 
+  O atributo aria-label é usado para fornecer uma descrição do conteúdo da seção para leitor de tela. 
+-->
+    <section class="experiencias" id="experiencias" aria-label="Experiências">
+        <!-- 
+      A tag h2 é usada para exibir um título secundário. 
+      A classe "subtitulo" é usada para aplicar estilos CSS específicos a este elemento. 
+    -->
+        <h2 class="subtitulo">Experiências</h2>
+
+        <div>
+            <div class="empresa">
+                <span class="empresa__ano">dez./2022 - </br> Atualmente</span>
+                <h3 class="empresa__titulo">
+                    <a href="https://www.hanesbrands.com.br/">Hanesbrands Inc.</a>
+                </h3>
+                <span class="empresa__titulo">Estagiário</span>
+                <p class="empresa__texto">
+                    Atuo na área de infraestrutura, dando suporte ao usuário,
+                    instalando
+                    softwares e sistemas, configurando PCs e impressoras,
+                    abrindo chamados
+                    e realizando atividades administrativas compatíveis com
+                    minha função.
+                </p>
+                <ul class="empresa__competencias">
+                    <li>Suporte ao usuário</li>
+                    <li>Instalação de softwares e sistemas</li>
+                    <li>Configuração de PCs</li>
+                    <li>Instalação e configuração de impressoras</li>
+                    <li>Aberturas de chamados</li>
+                    <li>Atividades administrativas compatíveis com a função</li>
+                    <li>Aprendizado das atividades relacionadas com TI</li>
                 </ul>
-            </nav>
-        </header>
-
-        <main class="introducao">
-            <img src="img/perfil.png" alt="Foto de Artur Duarte">
-            <div>
-                <h1>Desenvolvedor<br/>Full Stack</h1>
-                <p>Localizado em Osasco &#128205;</p>
             </div>
-        </main>
-    </body>
+            <div class="empresa">
+                <span class="empresa__ano">fev./2021 - </br> jun./2022 </span>
+                <h3 class="empresa__titulo">
+                    <a href="https://www.sesisp.org.br/">SESI</a>
+                </h3>
+                <span class="empresa__titulo">Jovem Aprendiz</span>
+                <p class="empresa__texto">
+                    Atuei como pesquisador na área de tecnologia, desenvolvendo
+                    um projeto
+                    de pesquisa para a criação de uma plataforma EAD para o
+                    SESI, em que
+                    foi necessário traçar a trajetória do ensino à distância,
+                    conhecer os
+                    benefícios desse modelo de ensino, assim como as opiniões de
+                    profissionais da área, as principais plataformas existentes
+                    no mercado
+                    e o desenvolvimento teórico de uma nova aplicação.
+                </p>
+                <ul class="empresa__competencias">
+                    <li>Redação acadêmica</li>
+                    <li>Pesquisa de mercado</li>
+                    <li>Microsoft Word</li>
+                    <li>Competências pessoais e sociais</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
 
 </html>

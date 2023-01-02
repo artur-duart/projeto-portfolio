@@ -1,0 +1,80 @@
+/* 
+  A regra .experiencia seleciona todos os elementos com a classe "experiencia". 
+  Neste caso, está sendo configurado o tamanho máximo do elemento, o espaçamento interno e externo do elemento, o alinhamento do elemento como centro e o layout do elemento como grade. A grade é dividida em duas colunas, sendo que a primeira tem 1 parte e a segunda tem 2 partes. O espaçamento entre as colunas também é configurado.
+*/
+.experiencias {
+    max-width: 75rem;
+    padding: 2.5rem 1.25rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6.25rem;
+}
+
+.experiencias .subtitulo {
+    color: #2b2b2b;
+}
+
+.empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.625rem 1.25rem;
+    padding: 1.25rem;
+    background: #1c1c1c;
+    margin-bottom: 1.25rem;
+    border-radius: 0.25rem;
+    position: relative;
+}
+
+.empresa::before {
+    content: "";
+    display: block;
+    width: 0.25rem;
+    height: 1.25rem;
+    background: linear-gradient(#0664b7, #05204b);
+    position: absolute;
+    top: 1.25rem;
+    left: -0.25rem;
+}
+
+.empresa__ano {
+    position: absolute;
+    top: 1.375rem;
+    left: -6.25rem;
+    color: #adadad;
+    font-size: 0.875rem;
+    width: 5rem;
+    text-align: right;
+}
+
+.empresa__titulo {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.empresa__titulo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.empresa__texto {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #adadad;
+}
+
+.empresa__competencias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    align-content: start;
+}
+
+.empresa__competencias li {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    border-radius: 0.25rem;
+    background: #0d0d0d;
+    padding: 0.3125rem 0.625rem;
+}
