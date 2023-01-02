@@ -9,9 +9,9 @@
   Neste caso, está sendo utilizada para remover os margens e paddings padrão dos elementos e para configurar o box-sizing como border-box.
 */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* 
@@ -19,9 +19,9 @@
   Neste caso, está sendo configurada a cor de fundo do body, a fonte e a cor do texto.
 */
 body {
-    background-color: #0d0d0d;
-    font-family: "Fira Sans", Arial, sans-serif;
-    color: #fff;
+  background-color: #0d0d0d;
+  font-family: "Fira Sans", Arial, sans-serif;
+  color: #fff;
 }
 
 /* 
@@ -29,7 +29,7 @@ body {
   Neste caso, está sendo removido o estilo padrão de marcadores da lista.
 */
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* 
@@ -37,8 +37,8 @@ ul {
   Neste caso, está sendo configurado o tamanho máximo da imagem como 100% da largura do container e o display como block.
 */
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 .subtitulo {
@@ -47,4 +47,18 @@ img {
   line-height: 1;
   text-transform: uppercase;
   max-width: 4ch;
+}
+
+@media (max-width: 48rem) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+}
+
+@media (max-width: 30rem) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
 }
